@@ -1,0 +1,44 @@
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff9e6;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  .not-found-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+
+  .not-found-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+
+  .not-found-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .not-found-button:hover {
+    background-color: #1d4ed8;
+  }
+  

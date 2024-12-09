@@ -1,0 +1,269 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9e6; 
+  color: #333;
+}
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fff9e6; 
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffcc00; 
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+
+p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+}
+
+
+.bg-white {
+  background-color: rgb(250, 151, 1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p.text-sm {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+.bg-blue-500 {
+  background-color: #2563eb;
+  color: white;
+}
+
+.bg-blue-500:hover {
+  background-color: #1d4ed8;
+}
+
+.bg-green-500 {
+  background-color: #10b981;
+  color: white;
+}
+
+.bg-green-500:hover {
+  background-color: #059669;
+}
+
+.bg-purple-500 {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.bg-purple-500:hover {
+  background-color: #6d28d9;
+}
+
+.bg-red-500 {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.bg-red-500:hover {
+  background-color: #c0392b;
+}
+
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.notes-section {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.notes-section h2 {
+  font-size: 1.8rem;
+  color: #ff9900; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.notes-section input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.notes-section input:focus {
+  outline: none;
+  border-color: #ffcc00; 
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.notes-section button {
+  background-color: #ffcc00; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.notes-section button:hover {
+  background-color: #e6b800; 
+}
+
+
+.notes-list {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.note-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: stretch; 
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px; 
+}
+
+
+.note-box {
+  background-color: #ffcc00;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+.note-box span {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.delete-button {
+  background: none;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .notes-section {
+    padding: 15px;
+  }
+
+  .notes-section h2 {
+    font-size: 1.5rem;
+  }
+}

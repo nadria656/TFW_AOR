@@ -1,0 +1,231 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+.delivery-notes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 40px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;  
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.delivery-note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+.btn-toggle-form {
+  background-color: #ffcc00; 
+  color: white;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.btn-toggle-form:hover {
+  background-color: #e6b800;
+}
+
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+
+.btn-register {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #218838;
+}
+
+
+.btn-download {
+  background-color: #3498db;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-download:hover {
+  background-color: #2980b9;
+}
+
+
+.delivery-note-details {
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;  
+  width: 100%;
+  max-width: 600px;
+}
+
+
+.delivery-note-details h3 {
+  font-size: 1.5rem;  
+  font-weight: bold;  
+  color: black;  
+  margin-bottom: 10px;
+}
+
+
+.delivery-note-details p {
+  font-size: 1rem;
+  color: #333;  
+  margin-bottom: 8px;
+}
+
+
+.delivery-note-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-note-form label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.delivery-note-form input,
+.delivery-note-form select,
+.delivery-note-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.delivery-note-form input:focus,
+.delivery-note-form select:focus,
+.delivery-note-form textarea:focus {
+  border-color: #ffcc00; 
+  outline: none;
+}
+
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .delivery-note-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .delivery-note-details {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .clients-list li {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+.delivery-notes-list ul {
+  list-style: none;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.delivery-notes-list li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.delivery-notes-list li h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.delivery-notes-list li p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.delivery-notes-list li button {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}

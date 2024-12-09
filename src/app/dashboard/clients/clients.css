@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+.clients-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 40px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;  
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.client-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+
+.client-details {
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;  
+  width: 100%;
+  max-width: 600px;
+}
+
+
+.client-details h3 {
+  font-size: 1.5rem;  
+  font-weight: bold;  
+  color: black;  
+  margin-bottom: 10px;
+}
+
+
+.client-details p {
+  font-size: 1rem;
+  color: #333;  
+  margin-bottom: 8px;
+}
+
+.client-details button {
+  margin-top: 15px;
+  background-color: #e67e22;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.client-details button:hover {
+  background-color: #d57e1f;
+}
+
+
+.client-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-form label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.client-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.client-form input:focus {
+  border-color: #ffcc00; 
+  outline: none;
+}
+
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+.btn-toggle-form {
+  background-color: #ffcc00;  
+  color: white;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.btn-toggle-form:hover {
+  background-color: #e6b800;
+}
+
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+
+.btn-register {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #218838;
+}
+
+
+.clients-list ul {
+  list-style: none;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.clients-list li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.clients-list li h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.clients-list li p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.clients-list li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.clients-list li button {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .client-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .client-details {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .clients-list li {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
